@@ -1,6 +1,13 @@
 version: 0.2
 
+phases:
+  build:
+    commands:
+      - echo "Zipping CloudFormation template"
+      - zip s3-bucket-template.zip s3-bucket.yaml
+
 artifacts:
   files:
-    - s3-bucket.yaml
-#This tells CodeBuild to take s3-bucket-template.yaml and make it the output artifact.
+    - s3-bucket-template.zip
+  name: PackageS3Template
+
