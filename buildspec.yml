@@ -2,5 +2,5 @@ version: 0.2
 
 artifacts:
   files:
-    - s3-bucket-template.yaml
+    - s3-bucket.yaml
 #This tells CodeBuild to take s3-bucket-template.yaml and make it the output artifact.
