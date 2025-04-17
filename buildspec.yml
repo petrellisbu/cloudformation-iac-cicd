@@ -9,5 +9,5 @@ phases:
 artifacts:
   files:
     - s3-bucket-template.zip
-  name: BuildArtifact
+  name: PackageS3Template
 
