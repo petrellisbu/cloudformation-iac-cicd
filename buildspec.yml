@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Deploying CloudFormation template..."
+      - aws cloudformation deploy \
+          --template-file templates/s3-bucket.yaml \
+          --stack-name my-s3-stack \
+          --capabilities CAPABILITY_NAMED_IAM
