@@ -7,3 +7,8 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: my-cloudformation-ci-demo-bucket
+
+  MySecondS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: my-cloudformation-ci-demo-bucket-2
