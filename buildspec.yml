@@ -1,13 +1,6 @@
 version: 0.2
 
-phases:
-  build:
-    commands:
-      - echo "Zipping CloudFormation template"
-      - zip s3-bucket-template.zip s3-bucket.yaml
-
 artifacts:
   files:
-    - s3-bucket-template.zip
+    - s3-bucket.yaml
   name: BuildArtifact
-
