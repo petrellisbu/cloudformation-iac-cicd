@@ -6,9 +6,9 @@ Resources:
   MyS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: test
+      BucketName: nankunda123
 
   MySecondS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: test1
+      BucketName: nankunda2345
