@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+    commands:
+      - pip install yamllint
+  build:
+    commands:
+      - echo "Running yamllint on CloudFormation templates..."
+      - yamllint s3-bucket.yaml
+
+artifacts:
+  files:
+    - "**/*"
